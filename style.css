@@ -1,16 +1,14 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #a09e9c;
-    text-transform: capitalize;
-  }
-  
-  .active{
-    padding: 35px 15px;
-    color: #616060;
+ #navbarNav a{
+  font-family: 'Roboto', sans-serif;
+    padding: 15px 25px;
+    color: #696868;
     font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
+    font-weight: 510;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+  }
+ #navbarNav a:hover{
+  color: #e6a750;
   }
   
 /* Custom CSS for small screens */
@@ -29,30 +27,34 @@ body{
    
   }
   
+#about{
+  font-family: 'Roboto', sans-serif;
+ margin:70px 0;
+ color: #616060;
+ font-weight: 400;
+}
 
-  /* Add your custom CSS styles */
+#back {
+  min-height: 100vh; /* Set minimum height to fill the viewport */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+}
 
-/* Style for the slide container */
-.single-slide-item {
-    background-color: #f9f9f9;
-    padding: 50px 0; /* Adjust padding as needed */
-  }
-  
-  /* Style for the welcome-hero-txt */
-  .welcome-hero-txt {
-    color: #333;
-  }
-  
-  /* Style for the image */
-  .welcome-hero-img img {
-    max-width: 100%;
-    height: auto;
-  }
-
+#Pictures h2{
+  font-family: 'Roboto', sans-serif;
+  color: #616060;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.card{
+  font-family: 'Roboto', sans-serif;
+  color: #616060;
+  font-weight: 400;
+}
 
   /* Example styles for the footer */
 .footer {
-    background-color: #f2f2f2;
+  margin-top: 15px;
     padding: 20px 0;
   }
   
@@ -66,21 +68,6 @@ body{
     color: #007bff; /* Hover color */
     text-decoration: none;
   }
-
-     .about-me {
-        padding: 20px;
-        border-radius: 10px;
-      
-    }
-
-    .about-me h2 {
-      margin-bottom: 20px;
-    }
-
-    .about-me p {
-        padding-top: 10px;
-      margin-bottom: 20px;
-    }
 
     .full-width-bg {
         background-color: #eee0e0; /* Section background color */
@@ -98,3 +85,37 @@ body{
     }
   }
   
+  #contact {
+    padding: 10px 0; /* Responsive padding */
+    color: #616060;
+    font-weight: 400;
+}
+
+#contact h1, #contact h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #616060;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #333 !important;
+  color: black;
+}
+
+
+/* Add custom styling to the navbar-toggler-icon */
+.navbar-toggler-icon i {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Set the desired color */
+}
+
+/* Optional: Add some padding or margin for spacing */
+.navbar-toggler-icon {
+  padding-right: 5px;
+}
+
+/* Hover effect for the icon */
+.navbar-toggler:hover .navbar-toggler-icon i {
+  color: #e6a750; /* Set the desired hover color */
+}
