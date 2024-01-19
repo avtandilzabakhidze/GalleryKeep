@@ -13,8 +13,8 @@
 
     <title>Pictures</title>
   </head>
-  <body class="bg-light" >
-    <div id="back-picture">
+  <body id="body" >
+    <div id="back">
     <nav class="navbar navbar-expand-lg navbar-ligh">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,60 +26,79 @@
         
     
           <!-- Navbar items (links) -->
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-center nav_contact" id="navbarNav" >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Pictures</a>
+                <a class="nav-link active" aria-current="page" href="./pictures.html">Pictures</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="container" id="picture_div">
+      <div class="container" >
          <!-- About Information -->
-        <div class="row" id="picture">
+        <div class="row" id="contact-page">
          <!-- Creator's Picture -->
-          <div class="col-md-3">
-            <h1>
-              watch. <br> learn. <br> grow.
-            </h1>
+          <div class="col-md-6">
+            <div class="contact-form">
+              <h1 style="float: right;">Contact us</h1> 
+              <div class="col-md-9" style="float: right;text-align: center;">
+              <p>Feel free to contact us</p>
+              <form action="#" method="post">
+                  <input type="text" id="name" name="name" required placeholder="Name">
+                  <input type="email" id="email" name="email" required placeholder="email">
+                  <textarea id="message" name="message" rows="4" required placeholder="tell us about it"></textarea>
+                  <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
-          <div class="col-md-9"  id="image-slider">
-            <img src="./Image 1.jpg" id="one" class="first-image">
-            <img src="./Image 2.jpg" id="two" class="hover-image">
-            <img src="./Image 3.jpg" id="three" class="third-image">
           </div>
-          
+          <div class="col-md-6">
+            <div class="address">
+              <div class="div_in">
+                <p><spam>contact</spam><br>
+                  Company Name<br>
+                  123 Street<br>
+                  city<br>
+                  zip code<br>
+                </p>
+              </div>
+              <div class="div_in">
+                <p><spam>contact</spam><br>
+                  Company Name<br>
+                  123 Street<br>
+                  city<br>
+                  zip code<br>
+                </p>
+              </div>
+          <div>
+            <ul class="media">
+              <li>
+                <a href="#">facebook</a>
+              </li>
+              <li>
+                <a href="#">facebook</a>
+              </li>
+              <li>
+                <a href="#">facebook</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+          </div>
         </div>
       </div>
     </div>
-      
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#image-slider img:not(#one)").hover(
-          function() {
-            // Mouse over
-            $(this).css("width", "50%");
-            $("#one").css("width", "20%");
-          },
-          function() {
-            // Mouse out
-            $(this).css("width", "20%");
-            $("#one").css("width", "50%");
-          }
-        );
-      });
-    </script>
-   
+
   </body>
 </html>

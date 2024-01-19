@@ -161,5 +161,143 @@
   width: 20%;
 }
 
+.contact-form h1{
+  font-size: 100px;
+  color: white;
+}
+.contact-form {
+  text-align: left;
+  color: white;
+}
+#contact-page p,h4{
+   color: white;
+}
 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.address {
+  text-align: left;
+}
+
+
+.container {
+  padding: 20px;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-form h1 {
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #343a40; /* Dark input background color */
+  border: none;
+  border-bottom: 2px solid #555; /* White border-bottom */
+  color: #fff;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.contact-form button {
+  width: 100%; /* Make the button the same width as the input fields */
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.address {
+  text-align: left;
+}
+
+#body{
+  background-color: #343a40;
+}
+
+.div_in p{
+  font-size: 14px;
+}
+
+.div_in spam{
+  color: rgb(218, 195, 195);
+}
+
+.address{margin-left: 80px;margin-top: 50px;}
+
+
+.media {
+  list-style: none;
+  padding: 0;
+  margin-top: 150px;
+}
+
+.media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.media li a{
+  color: white;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1300px) {
+  .contact-form h1 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-form h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact-form h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-form h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-form h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .address {
+    margin-left: 10px;
+  }
+  .media{
+    margin-top: 60px;
+    text-align: center;
+  }
+}
 
