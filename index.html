@@ -194,18 +194,35 @@
            </div>
          </div>
          <script>
-            const cards = document.querySelectorAll('.wrapper .card');
-            cards.forEach((card, index) => {
-              card.addEventListener('mouseover', () => {
-                card.style.width = '600px';
-                cards.forEach((otherCard, otherIndex) => {
-                  if (otherIndex !== index) {
-                    otherCard.style.width = '120px';
+          const cards = document.querySelectorAll('.wrapper .card');
+          
+          // Function to handle card interaction
+          const handleCardInteraction = (index) => {
+              cards.forEach((card, i) => {
+                  if (i === index) {
+                      card.style.width = '600px';
+                  } else {
+                      card.style.width = '120px';
                   }
-                });
               });
-            });
-          </script>
+          };
+          
+          // Mouseover event
+          cards.forEach((card, index) => {
+              card.addEventListener('mouseover', () => {
+                  handleCardInteraction(index);
+              });
+          });
+          
+          // Touchstart event for mobile
+          cards.forEach((card, index) => {
+              card.addEventListener('touchstart', (event) => {
+                  event.preventDefault(); // Prevent default touch behavior
+                  handleCardInteraction(index);
+              });
+          });
+      </script>
+      
         
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
